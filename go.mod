@@ -3,7 +3,6 @@ module github.com/bin-work/go-example
 go 1.17
 
 require (
-	beyondinfo.com/baselib/go/base_package.git v1.0.7
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/spf13/viper v1.10.1
 )

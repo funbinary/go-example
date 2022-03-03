@@ -48,5 +48,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println(viper.IsSet("datastore")) //true
 	fmt.Println(config)
 }

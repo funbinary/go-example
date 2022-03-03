@@ -41,6 +41,16 @@ func main() {
 	}
 	//fmt.Println(viper.AllKeys())
 	//fmt.Println(viper.AllSettings())
+	//获取配置文件的路径
+	fmt.Println(viper.ConfigFileUsed())
+	//打印调试信息，会根据viper查找顺序打印配置信息
+	//viper.Debug()
+	//判断键是否存在
+	fmt.Println(viper.InConfig("mysql"))    //false
+	fmt.Println(viper.InConfig("ip"))       //false
+	fmt.Println(viper.InConfig("mysql.ip")) //true
+	fmt.Println(viper.IsSet("mysql"))       //false
+
 	fmt.Println(viper.GetString("mysql.ip"))
 	// 绑定Flag
 	viper.BindFlagValue("mysql.ip", myFlag{})
