@@ -32,7 +32,7 @@ type Config struct {
 }
 
 func main() {
-	viper.SetConfigName("config.json")
+	viper.SetConfigName("config")
 	fmt.Println(file.ExtName("config.json"))
 	viper.SetConfigType("json")
 	viper.AddConfigPath(file.SelfDir())
@@ -49,5 +49,13 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(viper.IsSet("datastore")) //true
-	fmt.Println(config)
+	viper.MergeConfigMap(map[string]interface{}{
+		"test": 1,
+	})
+	viper.Debug()
+	//viper.Reset()
+	//fmt.Println("=========reset==================")
+	//viper.Debug()
+
+	viper.SafeWriteConfig()
 }
