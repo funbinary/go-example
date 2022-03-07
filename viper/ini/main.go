@@ -45,6 +45,7 @@ func main() {
 	fmt.Println(viper.ConfigFileUsed())
 	//打印调试信息，会根据viper查找顺序打印配置信息
 	//viper.Debug()
+	viper.SetDefault("mysql.ip", "defaultmysql")
 	//判断键是否存在
 	fmt.Println(viper.InConfig("mysql"))    //false
 	fmt.Println(viper.InConfig("ip"))       //false
@@ -60,7 +61,9 @@ func main() {
 	val, ok := os.LookupEnv("mysql.ip")
 
 	fmt.Println(val, ok)
-	fmt.Println(viper.GetString("mysql.ip"))
+
+	viper.SetTypeByDefaultValue(true)
+	fmt.Println(viper.Get("mysql.ip"))
 	//fmt.Println(config.Mysql.IP)
 	//fmt.Println(config.Mysql.Port)
 	//fmt.Println(config.Mysql.User)
