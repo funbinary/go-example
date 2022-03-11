@@ -3,8 +3,11 @@ module github.com/bin-work/go-example
 go 1.17
 
 require (
+	github.com/andlabs/ui v0.0.0-20200610043537-70a69d6ae31e
 	github.com/go-redis/redis/v8 v8.11.4
+	github.com/spf13/cobra v1.3.0
 	github.com/spf13/viper v1.10.1
+	goftp.io/server/v2 v2.0.0
 )
 
 require (
@@ -12,6 +15,7 @@ require (
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/onsi/ginkgo v1.16.5 // indirect

@@ -2,15 +2,10 @@ package main
 
 import (
 	"fmt"
-	"index/suffixarray"
+	"net"
+	"strconv"
 )
 
 func main() {
-	index := suffixarray.New([]byte("banana"))
-	offsets := index.Lookup([]byte("ana"), -1)
-	fmt.Println(offsets)
-	for _, off := range offsets {
-		fmt.Println(off)
-	}
-
+	fmt.Println(net.JoinHostPort("127.0.0.1", strconv.Itoa(21)))
 }
