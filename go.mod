@@ -3,8 +3,9 @@ module github.com/bin-work/go-example
 go 1.17
 
 require (
+	github.com/andlabs/ui v0.0.0-20200610043537-70a69d6ae31e
 	github.com/go-redis/redis/v8 v8.11.4
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.3.0
 	github.com/spf13/viper v1.10.1
 	goftp.io/server/v2 v2.0.0
 )
