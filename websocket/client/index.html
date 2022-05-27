@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试websocket</title>
+    <script>
+
+        var ws = new WebSocket("ws://192.168.3.100:8888/chat" );
+        ws.onopen = function () {
+            console.log("连接websocket成功")
+            ws.send("===")
+        }
+        ws.onerror = function (e) {
+            console.log("连接websocket失败")
+        }
+        ws.onclose = function (e) {
+            console.log("websocket连接关闭")
+        }
+        ws.onmessage = function (e) {
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
