@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/bin-work/go-example/internal/file"
+
+	"github.com/bin-work/go-example/pkg/bfile"
 	"github.com/spf13/viper"
 )
 
@@ -33,9 +34,9 @@ type Config struct {
 
 func main() {
 	viper.SetConfigName("config")
-	fmt.Println(file.ExtName("config.json"))
+	fmt.Println(bfile.ExtName("config.json"))
 	viper.SetConfigType("json")
-	viper.AddConfigPath(file.SelfDir())
+	viper.AddConfigPath(bfile.SelfDir())
 	err := viper.ReadInConfig()
 	if err != nil {
 		panic(err)

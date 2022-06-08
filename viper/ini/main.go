@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/bin-work/go-example/internal/file"
-	"github.com/spf13/viper"
 	"os"
+
+	"github.com/bin-work/go-example/pkg/bfile"
+	"github.com/spf13/viper"
 )
 
 type Mysql struct {
@@ -29,7 +30,7 @@ func (f myFlag) ValueType() string   { return "string" }
 func main() {
 	viper.SetConfigName("config")
 	viper.SetConfigType("ini")
-	viper.AddConfigPath(file.SelfDir())
+	viper.AddConfigPath(bfile.SelfDir())
 	err := viper.ReadInConfig()
 	if err != nil {
 		panic(err)
