@@ -1,14 +1,16 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
+	"github.com/bin-work/go-example/pkg/bfile"
+	"github.com/spf13/viper"
 )
 
 func main() {
-	r := gin.Default()
-
-	r.StaticFS("/", http.Dir("./dist"))
-	r.Run(":8081")
+	viper.SetConfigName("config")
+	viper.SetConfigType("ini")
+	viper.AddConfigPath(bfile.SelfDir())
+	err := viper.ReadInConfig()
+	if err != nil {
+		panic(err)
+	}
 }
