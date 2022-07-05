@@ -13,9 +13,7 @@ import (
 
 //主函数
 func main() {
-	for {
 
-	}
 	r := gin.Default()
 
 	//Get路由，动态路由

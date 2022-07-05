@@ -1,16 +1,15 @@
 package main
 
 import (
-	"github.com/bin-work/go-example/pkg/bfile"
-	"github.com/spf13/viper"
+	"fmt"
 )
 
+/*
+#include <stdio.h>
+*/
+import "C"
+
 func main() {
-	viper.SetConfigName("config")
-	viper.SetConfigType("ini")
-	viper.AddConfigPath(bfile.SelfDir())
-	err := viper.ReadInConfig()
-	if err != nil {
-		panic(err)
-	}
+
+	fmt.Println(C.CString("hello world\n"))
 }
