@@ -8,7 +8,7 @@ import (
 
 func main() {
 	salt := "beyondinfo"
-	pwd := "Qq@123456"
+	pwd := "123456"
 
 	m := md5.New()
 	_, err := io.WriteString(m, pwd+salt)

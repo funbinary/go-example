@@ -23,9 +23,10 @@ require (
 	github.com/rs/xid v1.4.0
 	github.com/sirupsen/logrus v1.5.0
 	github.com/sony/sonyflake v1.0.0
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.10.1
 	github.com/stretchr/testify v1.7.1
+	github.com/unrolled/secure v1.11.0
 	go.mongodb.org/mongo-driver v1.9.1
 	go.uber.org/atomic v1.9.0
 	go.uber.org/zap v1.21.0
@@ -46,6 +47,7 @@ require (
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
+	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
