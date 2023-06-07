@@ -1,6 +1,6 @@
 module github.com/bin-work/go-example
 
-go 1.17
+go 1.20
 
 require (
 	beyondinfo.com/baselib/go/base_package.git v1.0.14
@@ -10,6 +10,7 @@ require (
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/gogf/gf/v2 v2.0.6
 	github.com/golang-jwt/jwt v3.2.2+incompatible
+	github.com/google/gopacket v1.1.19
 	github.com/gorilla/websocket v1.5.0
 	github.com/jlaffaye/ftp v0.0.0-20220310202011-d2c44e311e78
 	github.com/matoous/go-nanoid/v2 v2.0.0
@@ -47,7 +48,6 @@ require (
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
-	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
