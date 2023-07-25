@@ -22,5 +22,6 @@ func main() {
 			fmt.Println("read udp failed, err:", err)
 			continue
 		}
+		listen.Write([]byte("heloo"))
 	}
 }

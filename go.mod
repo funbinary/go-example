@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	beyondinfo.com/baselib/go/base_package.git v1.0.14
+	github.com/XieXianbin/sms-provider v0.0.0-20170225161543-7becda7068d1
 	github.com/at-wat/ebml-go v0.16.0
 	github.com/bwmarrin/snowflake v0.3.0
 	github.com/gin-gonic/gin v1.9.1
@@ -11,10 +12,12 @@ require (
 	github.com/gogf/gf/v2 v2.0.6
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/gopacket v1.1.19
+	github.com/google/gousb v1.1.2
 	github.com/gorilla/websocket v1.5.0
 	github.com/jlaffaye/ftp v0.0.0-20220310202011-d2c44e311e78
 	github.com/matoous/go-nanoid/v2 v2.0.0
 	github.com/minio/minio-go/v6 v6.0.57
+	github.com/otiai10/gosseract/v2 v2.4.0
 	github.com/pion/interceptor v0.1.11
 	github.com/pion/rtcp v1.2.9
 	github.com/pion/rtp v1.7.13
@@ -73,6 +76,7 @@ require (
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/klauspost/cpuid v1.2.3 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
+	github.com/kr/pretty v0.3.0 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
@@ -100,6 +104,7 @@ require (
 	github.com/pion/turn/v2 v2.0.8 // indirect
 	github.com/pion/udp v0.1.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
