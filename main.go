@@ -1,7 +1,17 @@
 package main
 
-import "github.com/XieXianbin/sms-provider/smtp"
+import (
+	"github.com/bin-work/go-example/pkg/bshell"
+	"time"
+)
 
 func main() {
-	smtp.New()
+	ticker := time.NewTicker(time.Second)
+	for {
+		select {
+		case <-ticker.C:
+			bshell.ShellExec("scrot")
+		}
+	}
+
 }
